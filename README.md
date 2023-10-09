@@ -181,7 +181,7 @@ whisper_timestamped AUDIO_FILE.wav --model tiny --language fr
 }
 ```
 This get's parsed into a .TextGrid file with the following format:
-```json
+```
 File type = "ooTextFile"
 Object class = "TextGrid"
 
