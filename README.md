@@ -94,16 +94,6 @@ Note that you can use a fine-tuned Whisper model from HuggingFace or a local fol
 whisper_timestamped --model NbAiLab/whisper-large-v2-nob <...>
 ```
 
-### Plot of word alignment
-
-Note that you can use the `plot_word_alignment` option of the `whisper_timestamped.transcribe()` Python function or the `--plot` option of the `whisper_timestamped` CLI to see the word alignment for each segment.
-
-![Example alignement](figs/example_alignement_plot.png)
-
-* The upper plot represents the transformation of cross-attention weights used for alignment with Dynamic Time Warping. The abscissa represents time, and the ordinate represents the predicted tokens, with special timestamp tokens at the beginning and end, and (sub)words and punctuation in the middle.
-* The lower plot is an MFCC representation of the input signal (features used by Whisper, based on Mel-frequency cepstrum).
-* The vertical dotted red lines show where the word boundaries are found (with punctuation marks "glued" to the previous word).
-
 ### Example output
 
 Here is an example output of the `whisper_timestamped.transcribe()` function, which can be viewed by using the CLI:
@@ -184,7 +174,51 @@ whisper_timestamped AUDIO_FILE.wav --model tiny --language fr
   "language": "fr"
 }
 ```
+This get's parsed into a .TextGrid file with the following format:
+```json
+File type = "ooTextFile"
+Object class = "TextGrid"
 
+xmin = 0 
+xmax = 10 
+tiers? <exists> 
+size = 1 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "name" 
+        xmin = 0 
+        xmax = 4.653038548752835 
+        intervals: size = 7 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.7242654159817712 
+            text = "" 
+        intervals [2]:
+            xmin = 0.7242654159817712 
+            xmax = 0.9192658855632697 
+            text = "This" 
+        intervals [3]:
+            xmin = 0.9192658855632697 
+            xmax = 1.08 
+            text = "is" 
+        intervals [4]:
+            xmin = 1.08 
+            xmax = 1.1402664177556348 
+            text = "an" 
+        intervals [5]:
+            xmin = 1.1402664177556348 
+            xmax = 1.48 
+            text = "example" 
+        intervals [6]:
+            xmin = 1.48 
+            xmax = 1.9885184604351533 
+            text = "demo" 
+        intervals [7]:
+            xmin = 1.9885184604351533 
+            xmax = 10 
+            text = "" 
+```
 ### Options that may improve results
 
 Here are some options that are not enabled by default but might improve results.
