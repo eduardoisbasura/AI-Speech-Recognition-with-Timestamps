@@ -1,6 +1,6 @@
 # [Speech-Recognition-using-WhisperAI](https://github.com/eduardoisbasura/Speech-Recognition-using-WhisperAI)
 
-Speech-Recognition-using-WhisperAI is a Python script utilizing [Whisper](https://github.com/openai/whisper) and [whisper-timestamped](https://github.com/linto-ai/whisper-timestamped) to automatically transcribe and output a .TextGrid file with timestamps of each word from the start and the end of each word. Supports any language model that Whisper has.
+Speech Recognition using WhisperAI is a Python script utilizing [Whisper](https://github.com/openai/whisper) and [whisper-timestamped](https://github.com/linto-ai/whisper-timestamped) to automatically transcribe and output a .TextGrid file with timestamps of each word from the start and the end of each word. Supports any language model that Whisper has.
 
 ## Installation
 
