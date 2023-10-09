@@ -12,7 +12,7 @@ for audio_file in audio_file:
 
         audio = whisper.load_audio(audio_file)
 
-        model = whisper.load_model("medium.en")
+        model = whisper.load_model("NAME OF MODEL HERE")
 
         result = whisper.transcribe(model, audio,)
 
