@@ -271,4 +271,4 @@ whisper_timestamped --detect_disfluencies True ...
 * [whisper](https://github.com/openai/whisper): Whisper speech recognition (License MIT).
 * [dtw-python](https://pypi.org/project/dtw-python): Dynamic Time Warping (License GPL v3).
 * [whisper-timestamped](https://github.com/linto-ai/whisper-timestamped/tree/master): Multilingual Automatic Speech Recognition (License AGPL v3).
-* TextGridTools: [TextGridTools](https://github.com/hbuschme/TextGridTools)Read, write, and manipulate Praat TextGrid files with Python. (License GPL v3).
+* TextGridTools: [TextGridTools](https://github.com/hbuschme/TextGridTools) Read, write, and manipulate Praat TextGrid files with Python. (License GPL v3).
