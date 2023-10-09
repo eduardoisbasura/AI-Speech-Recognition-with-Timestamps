@@ -8,17 +8,23 @@ Speech-Recognition-using-WhisperAI is a Python script utilizing [Whisper](https:
 Requirements:
 - `python3` (version higher or equal to 3.7, at least 3.9 is recommended)
 - `ffmpeg` (see instructions for installation on the [whisper repository](https://github.com/openai/whisper))
+- `tgt` (version 1.4.4)
 
 Installation of `whisper-timestamped` with pip:
 
-```
+```bash
 pip3 install git+https://github.com/linto-ai/whisper-timestamped
 ```
 or clone repository and running installation
-```
+```bash
 git clone https://github.com/linto-ai/whisper-timestamped
 cd whisper-timestamped/
 python3 setup.py install
+```
+
+Installation of 'tgt' with pip:
+```bash
+pip install tgt
 ```
 
 #### [Additional Packages that might be needed (Depends on usage)](https://github.com/linto-ai/whisper-timestamped#additional-packages-that-might-be-needed)
