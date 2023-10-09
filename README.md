@@ -217,7 +217,7 @@ item []:
         intervals [7]:
             xmin = 1.9885184604351533 
             xmax = 10 
-            text = "" 
+            text = ""
 ```
 ### Options that may improve results
 
